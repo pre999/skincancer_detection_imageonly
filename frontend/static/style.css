@@ -1,0 +1,361 @@
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+html{
+    scroll-behavior: smooth;
+    height:100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgb(6, 3, 34);
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 30px;
+} 
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+    position: relative;
+}
+
+.nav-list li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: red;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.3s;
+}
+.nav-list li a:hover::after{
+    width:100%;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 0 20px;
+    
+}
+.highlight {
+    background-color: rgb(139, 217, 238);
+    display: inline;   
+}
+#search{
+    width:34%;
+    padding:5px;
+    font-size: 17px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+.background{
+    background: rgba(12, 7, 50, 0.5) url('background.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+.box-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 65%;
+    margin: auto;
+    height:95%;
+}
+.homesection{
+    height: 100vh;
+}
+.homecontent{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.homepicture{
+    width: 50%;
+    
+}
+.homepicture img{
+    width: 80%;
+    border:3px solid white;
+    border-radius: 20px;
+    display:block;
+    margin:auto;
+
+}
+.text-big{
+    font-size: 40px;
+    text-align: center;
+
+}
+.text-small{
+    font-size: 19px;
+}
+.pad{
+    padding: 9px 0px;
+}
+.sec{
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    margin: auto; 
+    color:black;
+}
+.paragraph{
+    padding: 0px 20px;
+}
+.Left{
+    flex-direction: row-reverse;
+}
+.sectionTag{
+    padding: 25px 0px;
+}
+.sectionSubTag{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.des1 img{
+    width: 390px;
+    border:2px solid white;
+    border-radius: 70px;
+    transition: transform 0.5s ;
+}
+.des1:hover img{
+    transform: scale(1.015);
+}
+
+.bg{
+    background-color: rgb(251, 244, 244);
+}
+.des2 img{
+    width: 200px;
+    border:2px solid white;
+    border-radius: 200px;
+}
+.sec1{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    margin: auto; 
+    color:black;
+}
+.contact{
+    background-color: white;
+    
+    
+}
+.text-center{
+    text-align: center;
+    font-size: 40px;
+    padding: 25px 0px;
+    color: rgb(20, 6, 81);
+}
+.bluei{
+    color:rgb(20, 6, 81);
+}
+.text-center p{
+    margin:20px auto;
+}
+.form{
+    max-width: 500px;
+    margin:auto;
+  
+}
+.form-input{
+    width: 100%;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin:15px 0px;
+    padding:6px 2px;
+}
+.btn1{
+    padding: 4px 5px;
+    
+    margin: 7px 3px;
+    border:2px solid grey;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+.bluete{
+    color:blue;
+}
+.tfooter {
+    background-color: rgb(6, 3, 34);
+    text-align: center; /* Center text */
+    color: white;
+    padding: 10px; /* Adjust padding as needed */
+    margin-top: 50px;
+    
+}
+
+.pfooter {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center;
+    align-items: center;
+}
+.btn-sm {
+    margin:10px;
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+/*.pfooter li {
+    font-size: 19px;
+    padding: 5px 10px; 
+}
+
+.pfooter li:not(:first-child) {
+    margin-left: 10px; 
+
+    <ul class="pfooter">
+                    <li>Copyright &copy; 2024 - All rights reserved</li>
+                    <li> 9897675467</li>
+                    <li>pantshreeya70@gmail.com</li>
+                </ul>
+}*/
+.pfooter span {
+    font-size: 19px;
+    padding: 5px 10px;
+}
+
+.pfooter i {
+    margin-right: 5px; /* Adjust the spacing between icon and text */
+}
+
+.pfooter br {
+    display: none; /* Hide line break on larger screens */
+}
+
+@media (max-width: 768px) {
+    .pfooter br {
+        display: block; /* Show line break on smaller screens */
+    }
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top:15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 500px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-home{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .homesection {
+        height: 150vh;
+    }
+
+    #search{
+        width: 60%;
+    }
+    .burger{
+    display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras {
+    padding: 0px;}
+    .form{
+        max-width: 50%;
+    }
+    .sec{
+        flex-direction: column-reverse; /*this is of symptoms*/
+        margin:100px;
+    }
+    .bg{
+        flex-direction: column-reverse; /*this is of symptoms*/
+        margin:20px;
+    }
+    .tfooter{
+        margin-top: 50px;
+    }
+
+    
+    
+}
